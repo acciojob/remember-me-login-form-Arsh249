@@ -6,6 +6,8 @@ if (localStorage.getItem('username') && localStorage.getItem('password')) {
     document.getElementById('loginForm').appendChild(existingBtn);
   }
 
+	let exbtn = document.getElementById('existing');
+	exbtn.style.display = 'none';
   // Handle form submission
   document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
